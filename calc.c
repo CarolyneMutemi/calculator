@@ -15,7 +15,11 @@ int main(int argc, char* argv[]){
 		if(argc>=3){
 		argv1 = atoi(argv[1]);
 		argv2 = atoi(argv[2]);
-		printf("The sum of argv[1] and argv[2]: %d\n", add(argv1, argv2));
+		printf("The sum of %d  and %d is %d.\n", argv1, argv2, add(argv1, argv2));
+		printf("The answer after subtracting %d from %d is %d.\n", argv1, argv2, subtract(argv1,argv2));
+		printf("The product of %d and %d is %d.\n", argv1, argv2, multiply(argv1,argv2));
+		printf("The answer after dividing %d by %d is %f.\n", argv1, argv2, divide(argv1,argv2));
+		printf("The remainder after dividing %d by %d is %d.\n", argv1, argv2, modulus(argv1,argv2));
 		}
 	}
 	return 0;
