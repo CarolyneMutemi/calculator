@@ -6,7 +6,7 @@ C_FLAGS := -c
 
 all: clean calc test
 
-#Add dependancy and automate compile step	
+#Add dependancy and automate compile step       
 $(TARGET):$(OBJS) 
 	@echo 'list of all .c files:'
 	@echo $(C_SOURCES)
@@ -25,10 +25,13 @@ $(TARGET):$(OBJS)
 
 #add a dependancy
 test: $(TARGET) 
-	./$(TARGET)
+	./$(TARGET) 9 5
 
 clean:
 	rm -f $(TARGET) *.o
+
+
+
 
 
 
